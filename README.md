@@ -20,6 +20,13 @@ Additional description about the project and its features.
 - CSS
 - JAVASCRIPT
 
+### Using it Locally
+- Clone the project from GitHub [here](https://github.com/Mosams/to-do-list.git)
+- Run the following commands as listed in your terminal:
+- `npm install`
+- `npm run build`
+- `npm start`
+
 ## How to Setup
 > You can simply clone or download [this repository](https://github.com/Mosams/to-do-list.git), and use your favorite browser or code editor to run this program.
 
@@ -55,3 +62,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 - Design idea by  web.archive.org.
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
