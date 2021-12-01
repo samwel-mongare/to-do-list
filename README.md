@@ -12,7 +12,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://mosams.github.io/to-do-list/dist/)
 
 ## Built With
 
