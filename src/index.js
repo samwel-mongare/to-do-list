@@ -1,3 +1,4 @@
+import _ from 'lodash';
 import './style.css';
 
 const todaysList = document.getElementById('todays-list');
