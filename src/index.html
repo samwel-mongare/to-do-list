@@ -3,10 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wbpack Exercise</title>
+    <title>Sam's To-do-List</title>
+    <script src="https://kit.fontawesome.com/1e6c06b0c6.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Hello webpack!</h1>
+    <div class="to-do-container">
+        <header>
+            <h1>Today's To Do <i class="fas fa-sync"></i></h1>
+        </header>
+        <main>
+           <div class="input-container"><input type="text" placeholder="Add your list..." class="task-input" ><span class="enter-btn">&#8629;</span></div>
+           <ul class="todays-list" id="todays-list"></ul>
+           <div class="clear-completed"><a id="task-completed" href="#">Clear Completed</a></div>
+        </main>
+    </div>
 </body>
 </html>
 

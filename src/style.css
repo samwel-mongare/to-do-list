@@ -1,3 +1,105 @@
 body {
-    background-color: bisque;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+span {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.enter-btn {
+    content: "\21B5";
+    margin-left: 0.8rem;
+  }
+
+h1 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1%;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.task-input {
+    font-style: italic;
+    border: none;
+    font-size: 1rem;
+    margin: 0;
+    width: 94%;
+}
+
+.input-container {
+    border: gray solid 1px;
+    padding: 0 1%;
+    background-color: white;
+    margin-bottom: -0.5rem;
+}
+
+.to-do-container {
+    border: gray solid 1px;
+    width: 40%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 10%;
+}
+
+.fa-sync {
+    font-size: 1rem;
+    margin-top: 0.6rem;
+}
+
+.clear-completed {
+    border-top: gray solid 1px;
+    height: 1.8rem;
+    text-align: center;
+    padding-top: 0.7rem;
+    background-color: whitesmoke;
+}
+
+ul {
+    margin: 0;
+    list-style-type: none;
+    padding: 0.5rem;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-top: gray solid 1px;
+}
+
+.listy {
+    width: 95%;
+    padding-top: 0.5rem;
+}
+
+label{
+    text-align: right;
+}
+
+.checky {
+    margin: 0;
+    padding-top: 1rem;
+    width: 5%;
 }
