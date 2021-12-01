@@ -1,4 +1,3 @@
-import _ from 'lodash';
 import './style.css';
 
 const todaysList = document.getElementById('todays-list');
@@ -31,13 +30,13 @@ function createList() {
     .forEach((task, index) => {
       const listItem = document.createElement('li');
       listItem.setAttribute('data-item', index);
-      listItem.innerHTML = _.join(`
+      listItem.innerHTML = `
         <div class= "listy">
         <input type="checkbox" id="${index}" name="task1" value="task1">
         <label for="${index}">${task.description}</label>
         </div>
             <span>&#8942;</span>
-        `, '');
+        `;
       todaysList.appendChild(listItem);
     });
 }
