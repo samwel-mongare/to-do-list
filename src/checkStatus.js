@@ -1,4 +1,3 @@
-/* eslint eqeqeq: 0 */
 const todaysList = document.getElementById('todays-list');
 
 const LOCAL_STORAGE_LIST_KEY = 'tasks.list';
@@ -49,7 +48,7 @@ export function checkboxChange() {
   todaysList.addEventListener('click', (e) => {
     if (e.target.tagName.toLowerCase() === 'input') {
       lists.forEach((list) => {
-        if (e.target.id == list.id) {
+        if (e.target.id.toString() === list.id.toString()) {
           list.completed = e.target.checked;
           save();
         }
