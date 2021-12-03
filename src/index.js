@@ -1,44 +1,64 @@
 import './style.css';
+// import './check.js';
 
 const todaysList = document.getElementById('todays-list');
+const checkyBox = document.getElementById('listy');
 
-const tasksTodo = [
+const LOCAL_STORAGE_LIST_KEY = 'tasks.list';
+let lists = JSON.parse(localStorage.getItem(LOCAL_STORAGE_LIST_KEY)) || [
   {
     description: 'Prepare breakfast',
     completed: false,
-    index: 1,
+    id: 1,
   },
   {
     description: 'Prepare Lunch',
     completed: false,
-    index: 2,
+    id: 2,
   },
   {
     description: 'Pick the kids',
-    completed: false,
-    index: 3,
+    completed: true,
+    id: 3,
   },
   {
     description: 'Go shopping',
     completed: false,
-    index: 4,
+    id: 4,
   },
 ];
 
 function createList() {
-  [...tasksTodo]
-    .forEach((task, index) => {
-      const listItem = document.createElement('li');
-      listItem.setAttribute('data-item', index);
-      listItem.innerHTML = `
-        <div class= "listy">
-        <input type="checkbox" id="${index}" name="task1" value="task1">
-        <label for="${index}">${task.description}</label>
-        </div>
+  lists.forEach(list => {
+    const listElement =  document.createElement('li');
+    listElement.dataset.listId = list.id;
+    listElement.classList.add("list-name");
+    listElement.innerHTML = `
+        <form class= "listy" id="listy" autocomplete="on">
+        <input type="checkbox" id=${list.id} name="task1" class="work"  ${list.completed ? 'checked' : ''}>
+        <label class="labely" for=${list.id}>${list.description}</label>
+        </form>
             <span>&#8942;</span>
         `;
-      todaysList.appendChild(listItem);
+      todaysList.appendChild(listElement);
     });
 }
 
-window.addEventListener('load', createList());
+function save() {
+  localStorage.setItem(LOCAL_STORAGE_LIST_KEY, JSON.stringify(lists));
+}
+
+todaysList.addEventListener('click', e => {
+
+  if (e.target.tagName.toLowerCase() === 'input') {
+  lists.forEach(list => {
+    if(e.target.id == list.id){
+  list.completed = e.target.checked;
+   save()
+  }
+  })
+  }  
+});
+
+createList()
+save()
