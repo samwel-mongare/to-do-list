@@ -48,7 +48,7 @@ export function checkboxChange() {
   todaysList.addEventListener('click', (e) => {
     if (e.target.tagName.toLowerCase() === 'input') {
       lists.forEach((list) => {
-        if (e.target.id == list.id) {
+        if (e.target.id === list.id) {
           list.completed = e.target.checked;
           save();
         }
