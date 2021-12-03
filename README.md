@@ -1,6 +1,6 @@
 
 
-# To Do list: list structure
+# To Do list: Interactive List
 
 > This is the first milestone of the To Do List project with the backbone or basic structure of the project.
 
@@ -19,6 +19,7 @@ Additional description about the project and its features.
 - HTML
 - CSS
 - JAVASCRIPT
+- Webpack
 
 ### Using it Locally
 - Clone the project from GitHub [here](https://github.com/Mosams/to-do-list.git)
