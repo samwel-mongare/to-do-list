@@ -1,9 +1,10 @@
 import './style.css';
-import { pageLoad, checkboxChange } from './checkStatus.js';
+import { pageLoad, checkboxChange, addContent } from './checkStatus.js';
 
 function main() {
   pageLoad();
   checkboxChange();
+  addContent();
 }
 
 main();
