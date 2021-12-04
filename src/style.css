@@ -117,3 +117,27 @@ input[type=checkbox]:checked + label.labely {
   padding-top: 1rem;
   width: 5%;
 }
+
+.fa-trash-o {
+  margin-top: 0.9em;
+  margin-right: 0.2em;
+  color: red;
+}
+
+textarea {
+  border: none;
+  height: 1em;
+  resize: none;
+  width: 80%;
+  overflow: hidden;
+}
+
+textarea:focus {
+  outline: none;
+  resize: none;
+  overflow: hidden;
+}
+
+input:focus {
+  outline: none;
+}

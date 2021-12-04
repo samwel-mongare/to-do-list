@@ -12,7 +12,9 @@
             <h1>Today's To Do <i class="fas fa-sync"></i></h1>
         </header>
         <main>
-           <div class="input-container"><input type="text" placeholder="Add your list..." class="task-input" ><span class="enter-btn">&#8629;</span></div>
+           <form action="/" class="input-container" id="input-container">
+            <input type="text" placeholder="Add your list..." class="task-input" id="task-input" >
+            <button type="submit" class="enter-btn">&#8629;</button></form>
            <ul class="todays-list" id="todays-list"></ul>
            <div class="clear-completed"><a id="task-completed" href="#">Clear Completed</a></div>
         </main>

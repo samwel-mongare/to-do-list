@@ -1,8 +1,8 @@
 
 
-# To Do list: Interactive List
+# To Do list: Add and Remove Functionality
 
-> This is the first milestone of the To Do List project with the backbone or basic structure of the project.
+> This is the Third milestone of the To Do List project with the final features of the to-do list project.
 
 ## Project screenshot
 
@@ -12,7 +12,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo Link](https://mosams.github.io/to-do-list/dist/)
+[Live Demo Link](https://mosams.github.io/to-do-list//dist/)
 
 ## Built With
 
